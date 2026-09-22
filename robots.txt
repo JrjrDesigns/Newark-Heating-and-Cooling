@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /privacy-policy.html
+Disallow: /terms.html
+
+Sitemap: https://newarkheatingandcooling.com/sitemap.xml
