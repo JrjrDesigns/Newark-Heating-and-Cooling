@@ -18,7 +18,7 @@
   --radius: 8px;
   --shadow: 0 6px 24px rgba(18, 36, 59, 0.10);
   --container: 1180px;
-  --header-h: 72px;
+  --header-h: 96px;
   --ease: 0.18s ease;
 }
 
@@ -61,7 +61,7 @@ li { margin-bottom: 0.45em; }
 .site-header { position: sticky; top: 0; z-index: 1000; background: var(--white); border-bottom: 1px solid var(--line); box-shadow: 0 2px 14px rgba(18, 36, 59, 0.06); }
 .header-inner { display: flex; align-items: center; gap: 22px; height: var(--header-h); }
 .logo { display: flex; align-items: center; flex-shrink: 0; }
-.logo img { height: 48px; width: auto; }
+.logo img { height: 72px; width: auto; }
 .main-nav { display: flex; align-items: center; gap: 4px; margin-left: auto; }
 .main-nav a { color: var(--navy); text-decoration: none; font-weight: 600; font-size: 15px; padding: 8px 10px; border-radius: 6px; white-space: nowrap; }
 .main-nav a:hover, .main-nav a[aria-current="page"] { color: var(--flame); }
@@ -215,10 +215,12 @@ li { margin-bottom: 0.45em; }
 .simple-page .prose { margin: 0 auto; }
 
 /* ---------- Responsive ---------- */
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
   .main-nav { display: none; }
   .menu-toggle { display: block; }
   .header-phone { margin-left: auto; }
+}
+@media (max-width: 1100px) {
   .content-grid { grid-template-columns: minmax(0, 1fr); gap: 36px; }
   .content-aside { position: static; }
   .estimate-grid { grid-template-columns: 1fr; gap: 36px; }
@@ -227,8 +229,8 @@ li { margin-bottom: 0.45em; }
 @media (max-width: 768px) {
   body { font-size: 16.5px; }
   .topbar { display: none; }
-  :root { --header-h: 64px; }
-  .logo img { height: 40px; }
+  :root { --header-h: 80px; }
+  .logo img { height: 60px; }
   .header-phone-label { display: none; }
   .header-phone-number { font-size: 22px; }
   .header-inner { gap: 10px; }
@@ -248,7 +250,7 @@ li { margin-bottom: 0.45em; }
 }
 @media (max-width: 400px) {
   .container { padding: 0 14px; }
-  .logo img { height: 34px; }
+  .logo img { height: 51px; }
   .header-phone-number { font-size: 19px; }
   .menu-toggle { width: 40px; padding: 9px 8px; }
   .btn { font-size: 18px; padding: 14px 18px; }
